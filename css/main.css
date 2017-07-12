@@ -4,34 +4,64 @@ body, html {
     font-size: 62.5%;
 }
 
+/*Home Navbar*/
 .header {
-    color: #fff;
-    padding: 20px 0px;
     position: absolute;
     top: 0px;
     width: 100%;
-    z-index: 1;
 }
 
-.header p {
-    font-size: 2.8em;
-    margin: 0px;
-    line-height: 35px;
+.header nav {
+    border-radius: 0px;
+    border: 0;
+    background-color: rgba(0,0,0,0.5);;
 }
 
-.header .nav-right {
-    float: right;
+.navbar-toggle .icon-bar {
+    background-color: #fff;
 }
 
-.header li {
-    margin: 0px 15px;
-    float: right;
-    text-align: center;
+.navbar-header {
+    padding: 10px 0px;
 }
 
-.header a {
-    font-size: 1.5em;
+nav .navbar-brand {
     color: #fff;
+    font-size: 4em;
+}
+
+nav .navbar-brand:hover, nav .navbar-brand:active , nav .navbar-brand:focus {
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.navbar-right li {
+    display: inline-block;
+    border: 0px;
+}
+
+.navbar-right a {
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 2.5em;
+    color: #fff;
+    border: 0px;
+}
+
+.navbar-right a:hover, .navbar-right a:focus, .navbar-right a:active {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border: 0px;
+}
+
+.header-normal {
+    position: relative;
+    font-family: 'Poiret One', cursive;
 }
 
 .banner {
@@ -57,14 +87,23 @@ body, html {
     font-size: 4em;
 }
 
+/*Home Main Section*/
+
 .main {
     font-family: 'Poiret One', cursive;
     margin-top: -5px;
     padding: 70px 0px;
 }
 
-.main .panel-body {
+.main .heading-main {
+    padding: 10px 15px;
+    border-bottom: 1px solid #000;
 }
+
+.main .body-main {
+    padding: 15px;
+}
+
 
 .main h3{
     font-size: 3.5em;
@@ -77,19 +116,30 @@ body, html {
     text-align: center;
 }
 
+.main ul {
+    min-height: 250px;
+}
+
 .main li {
+    margin: 30px 0px;
     font-size: 1.2em;
 }
 
+.main .progress-bar {
+    background-color: #000;
+}
+
+.footer {
+    color: #fff;
+    background-color: #000;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
 @media screen and (max-width: 992px) {
-    .header p {
-        text-align: center;
-    }
-    .header .nav-right {
-        margin-top: 20px;
-        float: none;
-        display: flex;
-        justify-content: center;
+    .navbar-right a {
+        font-size: 2em;
     }
     .banner h1, .banner h2 {
         font-size: 3em;
@@ -97,14 +147,13 @@ body, html {
     .banner .bannerText{
         top: 140px;
     }
+    .main ul {
+        min-height: 0px;
+    }
 }
 
 @media screen and (max-width: 500px) {
-    .header li {
-        width: 100%;
-        margin: 0px;
-    }
-    .header a {
+    .navbar-right a {
         font-size: 1em;
     }
 }

@@ -16,25 +16,32 @@
     <script src="js/main.js"></script>
   </head>
   <body>
-    
-
     <div class="banner">
         <video autoplay muted loop width="100%">
-            <source src="img/banner.m4v" type="video/mp4">
+            <source src="img/bg.mp4" type="video/mp4">
         </video>
         <div class="header">
-            <div class="container">
-                <div class="col-md-5">
-                    <p>B.K.</p>
+            <nav class="navbar">
+              <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">B.K.</a>
                 </div>
-                <div class="nav-right">
-                    <ul class = "nav nav-pills">
-                        <li><a href="#">ABOUT ME</a></li>
-                        <li><a href="#">PROJECTS</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="pages/about.html">About Me</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                  </ul>
                 </div>
-            </div>
+              </div>
+            </nav>
         </div>
         <div class="bannerText">
             <h1>Benedict Kempkes</h1>
@@ -48,43 +55,55 @@
             <div class="row">
                 <h3>Comming Soon</h3>
                 <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4>Race Data</h4>
-                        </div>
-                        <div class="panel-body">
-                            <ul>
-                                <li>Webpage for racing results for a small online community.</li>
-                                <li>Inspired by the timing page from formula one.</li>
-                            </ul>
+                    <div class="heading-main">
+                        <h4>GSR Statistics</h4>
+                    </div>
+                    <div class="body-main">
+                        <ul>
+                            <li>Webpage for race informations, results, standings and more.</li>
+                            <li>Inspired by the formula one timing page.</li>
+                            <li>Developed with ReactJS.</li>
+                        </ul>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%;">
+                                35%
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4>Towers</h4>
-                        </div>
-                        <div class="panel-body">
-                            <ul>
-                                <li>Webpage for goal tracking.</li>
-                                <li>Developed with ReactJS</li>
-                                <li>Developed with ReactJS</li>
-                            </ul>
+                    <div class="heading-main">
+                        <h4>Towers</h4>
+                    </div>
+                    <div class="body-main">
+                        <ul>
+                            <li>Web page for goal tracking.</li>
+                            <li>Track your goals for the year, month or week.</li>
+                            <li>Shows the specific progress of a goal.</li>
+                            <li>Developed with ReactJS</li>
+                        </ul>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+                                20%
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4>Studio Ghibli</h4>
-                        </div>
-                        <div class="panel-body">
-                            <ul>
-                                <li>Fanpage for movies by studio ghibli.</li>
-                                <li>Fanpage for movies by studio ghibli.</li>
-                                <li>Fanpage for movies by studio ghibli.</li>
-                            </ul>
+                    <div class="heading-main">
+                        <h4>Studio Ghibli FP</h4>
+                    </div>
+                    <div class="body-main">
+                        <ul>
+                            <li>Web page about the movies by studio ghibli.</li>
+                            <li>Information about characters, storys and more.</li>
+                            <li>Analysis and interpretations.</li>
+                            <li>Developed with ReactJS</li>
+                        </ul>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                                10%
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -94,6 +113,7 @@
 
     <div class="footer">
         <div class="container">
+            <p>&copy; Benedict Kempkes</p>
         </div>
     </div>
   </body>
