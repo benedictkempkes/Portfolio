@@ -9,6 +9,16 @@ var main = function (){
             $('.bannerText').fadeOut(3000);
         }
     });
+    //navbar
+    $('#scrollToContact').click(function(){
+        $('body').animate({ scrollTop: $(document).height() - $('.footer').height()  }, 1200);
+    });
+    $('#scrollToProjects').click(function(){
+        $('body').animate({ scrollTop: $('.banner').height()  }, 1200);
+    });
+    $('#scrollToAbout').click(function(){
+        $('body').animate({ scrollTop: $(document).height() - $('.about').height()  }, 1200);
+    });
 };
 
 $(document).ready(main);
