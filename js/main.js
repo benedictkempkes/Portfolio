@@ -11,13 +11,13 @@ var main = function (){
     });
     //navbar
     $('#scrollToContact').click(function(){
-        $('body').animate({ scrollTop: $(document).height() - $('.footer').height()  }, 1200);
+        $('html, body').animate({ scrollTop: $(document).height() - $('.footer').height()  }, 1200);
     });
     $('#scrollToProjects').click(function(){
-        $('body').animate({ scrollTop: $('.banner').height()  }, 1200);
+        $('html, body').animate({ scrollTop: $('.banner').height()  }, 1200);
     });
     $('#scrollToAbout').click(function(){
-        $('body').animate({ scrollTop: $(document).height() - $('.about').height()  }, 1200);
+        $('html, body').animate({ scrollTop: $(document).height() - $('.about').height()  }, 1200);
     });
 };
 
