@@ -95,6 +95,10 @@ nav ul {
     margin-top: -5px;
 }
 
+.main a:hover{
+    text-decoration: none;
+}
+
 .main .container {
     padding: 70px 0px;
     border-bottom: 1px solid #000;
